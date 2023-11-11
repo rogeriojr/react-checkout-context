@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Carrinho de Compras em React com Hooks e Context API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um exemplo básico de um carrinho de compras desenvolvido em React, utilizando os conceitos de Hooks e Context API. Ele permite adicionar produtos ao carrinho, remover itens, editar a quantidade e exibir o subtotal e total da compra.
 
-## Available Scripts
+## Estrutura do Projeto
 
-In the project directory, you can run:
+O projeto é dividido em três partes principais:
 
-### `npm start`
+1. **CartContext.js**: Este arquivo contém a implementação do Contexto do Carrinho, onde é definido o estado global do carrinho, juntamente com as funções para adicionar, remover e atualizar a quantidade dos itens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Cart.js**: Este componente é responsável por exibir os itens no carrinho, permitindo ao usuário remover itens, editar a quantidade e exibir o subtotal da compra.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Product.js**: Este é um componente de produto simples que pode ser adicionado ao carrinho. Ele exibe informações sobre o produto e fornece um botão para adicionar o item ao carrinho.
 
-### `npm test`
+4. **App.js**: O componente principal da aplicação. Ele importa o `CartProvider` do `CartContext.js` para fornecer o contexto do carrinho a toda a aplicação. Além disso, ele renderiza alguns produtos e o componente de carrinho.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Executar o Projeto
 
-### `npm run build`
+Clone o repositório para o seu computador:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+Navegue até o diretório do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd nome-do-projeto
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Instale as dependências:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Execute o aplicativo:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
+O aplicativo estará disponível em http://localhost:3000 no seu navegador.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Personalização
+Você pode personalizar este projeto adicionando mais produtos, estilos, ou implementando funcionalidades adicionais conforme necessário.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribuição
+Se você encontrar problemas ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Espero que este exemplo básico seja útil para compreender como criar um carrinho de compras com React, hooks e Context API. Divirta-se codificando!
